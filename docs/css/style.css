@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.footer2Bottom {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
+header {
+  width: 100%;
+  background: #000;
+  display: flex;
+}
+header .headerLogo {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 56px;
+  margin-left: 12%;
+}
+header .headerLogo a {
+  color: white;
+}
+header .headerLogo a:visited {
+  color: white;
+}
+header nav {
+  margin-top: 56px;
+  margin-left: 29%;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+header nav .topnav a {
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+header nav .topnav a:hover {
+  border-bottom: 3px solid #fcac45;
+}
+header nav .topnav a.icon {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .mainWelcome {
+  background: #000;
+  text-align: center;
+  padding: 200px 0 410px 0;
+}
+main .mainWelcome p {
+  color: #999999;
+  font-size: 20px;
+  font-weight: 100;
+}
+main .mainWelcome p span {
+  font-weight: bold;
+}
+main .mainWelcome h1 {
+  color: #999999;
+  font-size: 44px;
+  font-weight: 100;
+}
+main .mainWelcome h1:after {
+  display: none;
+}
+main .mainWelcome h1 .mycompany {
+  color: #fcac45;
+  font-weight: bold;
+}
+main .wrapper {
+  width: 76%;
+  margin: 0 auto;
+}
+main .wrapper section.mainAbout {
+  display: flex;
+  padding: 100px 0 100px 0;
+}
+main .wrapper section.mainAbout .aboutLeft img.mw-100 {
+  min-width: 100%;
+}
+main .wrapper section.mainAbout .aboutRight {
+  margin-left: 175px;
+}
+main .wrapper section.mainAbout .aboutRight h1 {
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 3px solid #fcac45;
+  padding-bottom: 20px;
+  font-weight: 100;
+}
+main .wrapper section.mainAbout .aboutRight h1:after {
+  display: none;
+}
+main .wrapper section.mainAbout .aboutRight h1 span {
+  font-weight: bold;
+}
+main .wrapper section.mainAbout .aboutRight p {
+  margin: 30px 0 50px 0;
+  color: #6c6c6c;
+  text-align: left;
+}
+main .wrapper section.mainAbout .aboutRight li {
+  background: url(../img/mark.png) 0px no-repeat;
+  padding-left: 25px;
+  margin-top: 10px;
+  color: #6c6c6c;
+}
+main .wrapper section.mainAbout .aboutRight li span {
+  font-weight: bold;
+}
+main section.mainTeam {
+  background: #000;
+  text-align: center;
+  padding: 100px 0 165px 0;
+  color: #fff;
+}
+main section.mainTeam .wrapper h1 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: italic;
+  font-size: 44px;
+  padding-bottom: 30px;
+}
+main section.mainTeam .wrapper .teamCards {
+  display: flex;
+}
+main section.mainTeam .wrapper .teamCards .card {
+  margin: 0 40px;
+}
+main section.mainTeam .wrapper .teamCards .card .photo {
+  background: #ffffff;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+main section.mainTeam .wrapper .teamCards .card .name {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+main section.mainTeam .wrapper .teamCards .card .position {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+main section.mainTeam .wrapper .teamCards .card .aboutPosition {
+  font-size: 14px;
+}
+main section.mainServices h1 {
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+main section.mainServices p {
+  text-align: center;
+}
+main section.mainServices .wrapper p {
+  color: #6c6c6c;
+  margin-bottom: 100px;
+}
+main section.mainServices .wrapper .servicesCards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+main section.mainServices .wrapper .servicesCards h4 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+main section.mainClients {
+  background: #000;
+  padding: 100px 0 205px 0;
+  color: #fff;
+  text-align: center;
+}
+main section.mainClients .wrapper h1 {
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+main section.mainClients .wrapper h1 span {
+  font-weight: bold;
+}
+main section.mainClients .wrapper img {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+main section.mainWork {
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+main section.mainWork .wrapper h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+main section.mainWork .wrapper h1 span {
+  font-weight: bold;
+}
+main section.mainWork .wrapper p {
+  margin-bottom: 175px;
+  color: #6c6c6c;
+}
+main section.mainWork .wrapper img:hover {
+  opacity: 0.9;
+}
+main section.mainTestimonials {
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 170px;
+}
+main section.mainTestimonials .wrapper h1 {
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+main section.mainTestimonials .wrapper h1 span {
+  font-weight: bold;
+}
+main section.mainTestimonials .wrapper .testimonial {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+main section.mainTestimonials .wrapper p + p {
+  color: #b2b2b2;
+}
+main section.mainTestimonials .wrapper p + p span {
+  font-weight: 100;
+}
+main section.contactForm {
+  padding: 100px 0 100px 0;
+}
+main section.contactForm h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+main section.contactForm .contactWrapper {
+  width: 753px;
+  margin: 0 auto;
+  color: #636363;
+}
+main section.contactForm .contactWrapper p, main section.contactForm .contactWrapper h1 {
+  text-align: center;
+}
+main section.contactForm .contactWrapper .formInputs p {
+  text-align: left;
+}
+main section.contactForm .contactWrapper .formInputs + p {
+  text-align: left;
+}
+main section.contactForm .contactWrapper .red {
+  color: red;
+}
+main section.contactForm .contactWrapper .formInputs {
+  margin-top: 100px;
+  display: flex;
+}
+main section.contactForm .contactWrapper .buttonBlock {
+  display: flex;
+  justify-content: flex-end;
+}
+main section.contactForm input {
+  width: 360px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+main section.contactForm input:first-of-type {
+  margin-right: 23px;
+}
+main section.contactForm textarea {
+  width: 100%;
+  height: 163px;
+}
+main section.contactForm input, main section.contactForm textarea {
+  border: 1px solid #999999;
+  margin-top: 5px;
+}
+main section.contactForm input[type=submit] {
+  width: 165px;
+  height: 40px;
+  background: #fcac45;
+  color: #fff;
+  margin-right: 0;
+  margin-top: 20px;
+  border: none;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #222222;
+  padding: 30px 0 30px 0;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+}
+footer .social img {
+  margin-left: 12px;
+}
+footer .social img:hover {
+  opacity: 0.6;
+}
+footer p {
+  color: #9E9E9E;
+  text-align: center;
+}
+
+@media screen and (max-width: 1264px) {
+  header nav {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 950px) {
+  header nav {
+    width: 100%;
+  }
+  header nav .topnav a {
+    display: none;
+  }
+  header nav .topnav a.icon {
+    display: block;
+    float: right;
+    margin-top: -17px;
+    color: #fff;
+    font-size: 25px;
+  }
+  header nav .topnav.responsive {
+    position: relative;
+    top: 50px;
+    left: -200px;
+    height: 340px;
+  }
+  header nav .topnav.responsive a.icon {
+    position: absolute;
+    top: -50px;
+    right: -200px;
+  }
+  header nav .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  main section.mainWelcome {
+    padding: 50px 0 50px 0;
+  }
+  main section.mainWelcome p {
+    font-size: 14px;
+  }
+  main section.mainWelcome h1 {
+    font-size: 25px;
+  }
+  main .wrapper section.mainAbout {
+    flex-direction: column;
+  }
+  main .wrapper section.mainAbout .aboutLeft img.mw-100 {
+    max-width: 100%;
+  }
+  main .wrapper section.mainAbout .aboutRight {
+    text-align: center;
+    margin-left: 0;
+  }
+  main .wrapper section.mainAbout .aboutRight li {
+    text-align: left;
+  }
+  main .wrapper section.mainAbout .aboutRight h1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  main section.mainTeam .wrapper .teamCards {
+    flex-direction: column;
+  }
+  main section.mainServices .wrapper .servicesCards {
+    grid-template-columns: auto;
+  }
+  main section.mainWork .wrapper .gallery .line1 img:not(:first-child) {
+    display: none;
+  }
+  main section.mainWork .wrapper .gallery .line2 img:not(:first-child) {
+    display: none;
+  }
+  main section.mainWork .wrapper .gallery .line3 img:not(:first-child) {
+    display: none;
+  }
+  main section.contactForm .contactWrapper {
+    width: 50%;
+  }
+  main section.contactForm .contactWrapper .formInputs {
+    flex-direction: column;
+  }
+  main section.contactForm .contactWrapper input {
+    width: 170px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,363 @@
+*
+	margin: 0
+	padding: 0
+a
+	text-decoration: none
+li
+	list-style: none
+body
+	font-family: 'Open Sans', sans-serif
+footer
+	flex-shrink: 0
+
+h1:after
+	content: ""
+	display: block
+	margin: 0 auto
+	width: 100px
+	padding-top: 30px
+	border-bottom: 3px solid #fcac45
+
+//footer 2 bottom
+//https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f
+html, body
+	width: 100%
+	height: 100%
+.footer2Bottom
+	min-height: 100%
+	display: flex
+	flex-direction: column
+	align-items: stretch
+main
+	flex-grow: 1
+header, main, footer
+	flex-shrink: 0
+
+header
+	width: 100%
+	background: #000
+	display: flex
+	.headerLogo
+		text-transform: uppercase
+		color: #fff
+		font-weight: 800
+		font-size: 24px
+		cursor: pointer
+		margin-top: 56px
+		margin-left: 12%
+		a
+			color: white
+			&:visited
+				color: white
+	nav
+		margin-top: 56px
+		margin-left: 29%
+		z-index: 1
+		padding-bottom: 20px
+		.topnav
+			a
+				color: #fff
+				text-align: center
+				padding: 12px 16px
+				font-size: 14px
+				font-weight: bold
+				&:hover
+					border-bottom: 3px solid #fcac45
+				&.icon
+					display: none
+
+main
+	display: flex
+	flex-direction: column
+	width: 100%
+	.mainWelcome
+		background: #000
+		text-align: center
+		padding: 200px 0 410px 0
+		p
+			color: #999999
+			font-size: 20px
+			font-weight: 100
+			span
+				font-weight: bold
+		h1
+			color: #999999
+			font-size: 44px
+			font-weight: 100
+			&:after
+				display: none
+			.mycompany
+				color: #fcac45
+				font-weight: bold
+	.wrapper
+		width: 76%
+		margin: 0 auto
+		section.mainAbout
+			display: flex
+			padding: 100px 0 100px 0
+			.aboutLeft
+				img.mw-100
+					min-width: 100%
+			.aboutRight
+				margin-left: 175px
+				h1
+					text-transform: uppercase
+					display: inline-block
+					border-bottom: 3px solid #fcac45
+					padding-bottom: 20px
+					font-weight: 100
+					&:after
+						display: none
+					span
+						font-weight: bold
+				p
+					margin: 30px 0 50px 0
+					color: #6c6c6c
+					text-align: left
+				li
+					background: url(../img/mark.png) 0px no-repeat
+					padding-left: 25px
+					margin-top: 10px
+					color: #6c6c6c
+					span
+						font-weight: bold
+	section.mainTeam
+		background: #000
+		text-align: center
+		padding: 100px 0 165px 0
+		color: #fff
+		.wrapper
+			h1
+				font-family: 'Open Sans'
+				font-weight: 600
+				font-style: italic
+				font-size: 44px
+				padding-bottom: 30px
+			.teamCards
+				display: flex
+				.card
+					margin: 0 40px
+					.photo
+						background: #ffffff
+						width: 125px
+						height: 125px
+						border-radius: 50%
+						margin: 20px auto
+					.name
+						font-size: 20px
+						margin-bottom: 7px
+					.position
+						font-size: 16px
+						margin-bottom: 35px
+					.aboutPosition
+						font-size: 14px
+						// font-weight:
+	section.mainServices
+		h1
+			text-align: center
+			padding: 100px 0 30px 0
+		p
+			text-align: center
+		.wrapper
+			p
+				color: #6c6c6c
+				margin-bottom: 100px
+			.servicesCards
+				text-align: center
+				display: grid
+				grid-template-columns: auto auto auto auto
+				grid-column-gap: 20px
+				h4
+					margin-top: 20px
+					margin-bottom: 15px
+					text-transform: uppercase
+	section.mainClients
+		background: #000
+		padding: 100px 0 205px 0
+		color: #fff
+		text-align: center
+		.wrapper
+			h1
+				margin-bottom: 30px
+				font-weight: 100
+				span
+					font-weight: bold
+			img
+				margin-top: 10px
+				margin-left: 30px
+	section.mainWork
+		text-align: center
+		padding: 100px 0 100px 0
+		.wrapper
+			h1
+				text-transform: uppercase
+				margin-bottom: 30px
+				font-weight: 100
+				span
+					font-weight: bold
+			p
+				margin-bottom: 175px
+				color: #6c6c6c
+			img:hover
+				opacity: 0.9
+	section.mainTestimonials
+		background: #000
+		text-align: center
+		color: #fff
+		padding-bottom: 170px
+		.wrapper
+			h1
+				text-transform: uppercase
+				margin-top: 100px
+				margin-bottom: 30px
+				font-weight: 100
+				span
+					font-weight: bold
+			.testimonial
+				text-transform: uppercase
+				margin-bottom: 30px
+			p+p
+				color: #b2b2b2
+				span
+					font-weight: 100
+	section.contactForm
+		padding: 100px 0 100px 0
+		h1
+			color: #000
+			margin-bottom: 30px
+		.contactWrapper
+			p,h1
+				text-align: center
+			width: 753px
+			margin: 0 auto
+			color: #636363
+			.formInputs
+				p
+					text-align: left
+			.formInputs+p
+				text-align: left
+			.red
+				color: red
+			.formInputs
+				margin-top: 100px
+				display: flex
+			.buttonBlock
+				display: flex
+				justify-content: flex-end
+		input
+			width: 360px
+			height: 40px
+			font-size: 20px
+			margin-bottom: 30px
+			&:first-of-type
+				margin-right: 23px
+		textarea
+			width: 100%
+			height: 163px
+		input,textarea
+			border: 1px solid #999999
+			margin-top: 5px
+		input[type=submit]
+			width: 165px
+			height: 40px
+			background: #fcac45
+			color: #fff
+			margin-right: 0
+			margin-top: 20px
+			border: none
+footer
+	width: 100%
+	height: auto
+	background: #222222
+	padding: 30px 0 30px 0
+	.social
+		display: flex
+		justify-content: center
+		img
+			margin-left: 12px
+			&:hover
+				opacity: 0.6
+	p
+		color: #9E9E9E
+		text-align: center
+
+
+@media screen and (max-width: 1264px)
+	header
+		nav
+			margin-left: 5%
+
+@media screen and (max-width: 950px)
+	header
+		nav
+			width: 100%
+			.topnav
+				a
+					display: none
+					&.icon
+						display: block
+						float: right
+						margin-top: -17px
+						color: #fff
+						font-size: 25px
+			.topnav.responsive
+				position: relative
+				top: 50px
+				left: -200px
+				height: 340px
+				a.icon
+					position: absolute
+					top: -50px
+					right: -200px
+				a
+					float: none
+					display: block
+					text-align: left
+	main
+		section.mainWelcome
+			padding: 50px 0 50px 0
+			p
+				font-size: 14px
+			h1
+				font-size: 25px
+		.wrapper
+			section.mainAbout
+				flex-direction: column
+				.aboutLeft
+					img.mw-100
+						max-width: 100%
+				.aboutRight
+					text-align: center
+					margin-left: 0
+					li
+						text-align: left
+					h1
+						margin-top: 10px
+						font-size: 20px
+		section.mainTeam
+			.wrapper
+				.teamCards
+					flex-direction: column
+		section.mainServices
+			.wrapper
+				.servicesCards
+					grid-template-columns: auto
+		section.mainWork
+			.wrapper
+				.gallery
+					.line1
+						img:not(:first-child)
+							display: none
+					.line2
+						img:not(:first-child)
+							display: none
+					.line3
+						img:not(:first-child)
+							display: none
+		section.contactForm
+			.contactWrapper
+				width: 50%
+				.formInputs
+					flex-direction: column
+				input
+					width: 170px

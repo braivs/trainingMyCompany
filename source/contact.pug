@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+include includes/head
+body
+	include includes/header
+	main
+		section.contactForm
+			.contactWrapper
+				h1 CONTACT US
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				form(action="#" name="newform" method="post")
+					.formInputs
+						p Name <span class="red">*</span>
+							input(type="text" name="")
+						p Email address <span class="red">*</span>
+							input(type="text" name="")
+					p Message <span class="red">*</span>
+					textarea(name="text")
+					.buttonBlock
+						input(type="submit" value="SEND")
+	include includes/footer
